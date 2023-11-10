@@ -16,6 +16,10 @@
             <a href="employees.html">Employees</a>
             <a href="customers.html">Customers</a>
             <a href="foster-parents.html">Foster Parents</a>
+            <a href="adoptions.html">Adoptions</a>
+            <a href="cafe-transactions.html">Cafe Transactions</a>
+            <a href="product-orders.html">Product Orders</a>
+            <a href="foster-cat-relationships.html">Foster/Cat Relationships</a>
         </nav>
     </header>
     <main>
@@ -132,6 +136,14 @@
             <div class="form-region">
                 <form>
                     <div class="group-one">
+                        <label for="cat-id">Cat ID:</label>
+                        <select name="cat-id" id="cat-id">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
                         <label for="name">Name:</label><br>
                         <input type="text" id="name" name="name"><br>
                         <label for="dob">DOB:</label><br>
@@ -160,7 +172,7 @@
             <h2>Delete Cat</h2>
             <fieldset>Are you sure you want to delete {{example_cat}}?</fieldset>
             <div class="group-three">
-                <input class="btn" type="submit" value="Save">
+                <input class="btn" type="submit" value="Delete">
                 <input class="btn" type="button" value="Cancel">
             </div>
         </div>

@@ -24,70 +24,55 @@
     </header>
     <main>
         <div class="content-stripe hero-stripe">
-            <h1>Manage Cafe Products</h1>
+            <h1>Manage Product Orders</h1>
         </div>
         <div class="content-stripe table-stripe">
             <table>
                 <tr>
                   <th></th>
                   <th></th>
+                  <th>Product Order ID</th>
+                  <th>Transaction ID</th>
                   <th>Product ID</th>
-                  <th>Name</th>
-                  <th>Price</th>
                   <th>Quantity</th>
-                  <th>Product Type</th>
                 </tr>
                 <tr>
                   <td>Edit</td>
                   <td>Delete</td>
                   <td>1</td>
-                  <td>Vanilla latte</td>
-                  <td>3.75</td>
-                  <td>110</td>
-                  <td>Beverage</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>2</td>
                 </tr>
                 <tr>
                   <td>Edit</td>
                   <td>Delete</td>
                   <td>2</td>
-                  <td>Plain bagel</td>
-                  <td>2.50</td>
-                  <td>35</td>
-                  <td>Food</td>
+                  <td>1</td>
+                  <td>4</td>
+                  <td>1</td>
                 </tr>
                 <tr>
                     <td>Edit</td>
                     <td>Delete</td>
                     <td>3</td>
-                    <td>Blueberry muffin</td>
-                    <td>3.0</td>
-                    <td>42</td>
-                    <td>Food</td>
-                  </tr>
-                  <tr>
-                    <td>Edit</td>
-                    <td>Delete</td>
-                    <td>4</td>
-                    <td>Green tea</td>
-                    <td>3.25</td>
-                    <td>203</td>
-                    <td>Beverage</td>
-                  </tr>
+                    <td>3</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
               </table>
         </div>
         <div class="content-stripe add-stripe">
-            <h2>Add Cafe Product</h2>
+            <h2>Add Product Order</h2>
             <div class="form-region">
                 <form>
                     <div class="group-one">
-                    <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name"><br>
-                    <label for="price">Price:</label><br>
-                    <input type="text" id="price" name="price">
+                    <label for="transaction-id">Transaction ID:</label><br>
+                    <input type="text" id="transaction-id" name="transaction-id"><br>
+                    <label for="product-id">Product ID:</label><br>
+                    <input type="text" id="product-id" name="product-id">
                     <label for="quantity">Quantity:</label><br>
                     <input type="text" id="quantity" name="quantity">
-                    <label for="product-type">Product Type:</label><br>
-                    <input type="text" id="product-type" name="product-type">
                     </div>
                     <div class="group-three">
                         <input class="btn" type="submit" value="Save">
@@ -97,35 +82,32 @@
             </div>
         </div>
         <div class="content-stripe update-stripe">
-            <h2>Update Cafe Product</h2>
+            <h2>Update Product Order</h2>
             <div class="form-region">
                 <form>
                     <div class="group-one">
-                        <label for="cafe-product-id">Cafe Product ID:</label>
-                        <select name="cafe-product-id" id="cafe-product-id">
+                        <label for="transaction-id">Product Order ID:</label>
+                        <select name="transaction-id" id="transaction-id">
                             <option value="1">1</option>
                             <option value="2">2</option>
                             <option value="3">3</option>
-                            <option value="4">4</option>
                         </select>
-                        <label for="name">Name:</label><br>
-                        <input type="text" id="name" name="name"><br>
-                        <label for="price">Price:</label><br>
-                        <input type="text" id="price" name="price">
+                        <label for="transaction-id">Transaction ID:</label><br>
+                        <input type="text" id="transaction-id" name="transaction-id"><br>
+                        <label for="product-id">Product ID:</label><br>
+                        <input type="text" id="product-id" name="product-id">
                         <label for="quantity">Quantity:</label><br>
                         <input type="text" id="quantity" name="quantity">
-                        <label for="product-type">Product Type:</label><br>
-                        <input type="text" id="product-type" name="product-type">
                     </div>
                     <div class="group-three">
-                    <input class="btn" type="submit" value="Save">
-                    <input class="btn" type="button" value="Cancel">
-                    </div>
+                        <input class="btn" type="submit" value="Save">
+                        <input class="btn" type="button" value="Cancel">
+                        </div>
                 </form>
               </div>
         </div>
         <div class="content-stripe delete-stripe">
-            <h2>Delete Cafe Product</h2>
+            <h2>Delete Product Order</h2>
             <fieldset>Are you sure you want to delete {{example}}?</fieldset>
             <div class="group-three">
                 <input class="btn" type="submit" value="Delete">
